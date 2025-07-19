@@ -66,6 +66,17 @@
       border: 1px solid #ccc;
       border-radius: 6px;
     }
+    .subsection {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .subsection h3 {
+      margin-top: 0;
+      color: #004080;
+    }
   </style>
 </head>
 <body>
@@ -79,7 +90,7 @@
     <div class="tab" onclick="showContent('step1')">Step 1</div>
     <div class="tab" onclick="showContent('step2')">Step 2</div>
     <div class="tab" onclick="showContent('step3')">Step 3</div>
-    <div class="tab" onclick="showContent('sop')">SOP for Mini Barrage</div>
+    <div class="tab" onclick="showContent('reference')">Reference Documents</div>
   </div>
 
   <div id="function" class="content active">
@@ -107,10 +118,45 @@
     <img src="slide_45.png" alt="Step 3 Slide">
   </div>
 
-  <div id="sop" class="content">
-    <h2>SOP for Mini Barrage</h2>
-    <iframe src="sop_mini_barrage.pdf"></iframe>
-    <p>If the document doesn't load, <a href="sop_mini_barrage.pdf" target="_blank">click here to open it</a>.</p>
+  <div id="reference" class="content">
+    <h2>Reference Documents</h2>
+
+    <div class="subsection">
+      <h3>Why-Why Analysis</h3>
+      <iframe src="why_why_analysis.pdf"></iframe>
+    </div>
+
+    <div class="subsection">
+      <h3>OPL</h3>
+      <iframe src="opl.pdf"></iframe>
+    </div>
+
+    <div class="subsection">
+      <h3>SOP - Barrage</h3>
+      <iframe src="sop_barrage.pdf"></iframe>
+    </div>
+
+    <div class="subsection">
+      <h3>SOP - Mini Barrage</h3>
+      <iframe src="sop_mini_barrage.pdf"></iframe>
+    </div>
+
+    <div class="subsection">
+      <h3>Barrage Resistivity</h3>
+      <iframe src="barrage_resistivity.xlsx"></iframe>
+      <p><a href="barrage_resistivity.xlsx" target="_blank">Download Excel File</a></p>
+    </div>
+
+    <div class="subsection">
+      <h3>Cooler Age</h3>
+      <iframe src="cooler_age.xlsx"></iframe>
+      <p><a href="cooler_age.xlsx" target="_blank">Download Excel File</a></p>
+    </div>
+
+    <div class="subsection">
+      <h3>Action Plan</h3>
+      <iframe src="action_plan.pdf"></iframe>
+    </div>
   </div>
 
   <script>
